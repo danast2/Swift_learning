@@ -66,4 +66,5 @@ let numObjb = Double(2.888) // 2
 
 str()
 run()
-new_add()
+var sas = new_add(myVar: 77)
+let beam = new_add_without_external_name(55)
