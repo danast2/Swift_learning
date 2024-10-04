@@ -66,3 +66,4 @@ let numObjb = Double(2.888) // 2
 
 str()
 run()
+new_add()
