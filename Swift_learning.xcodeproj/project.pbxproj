@@ -11,6 +11,8 @@
 		3079DFD12CAD95DA0003E9A9 /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD02CAD95DA0003E9A9 /* new.swift */; };
 		3079DFD32CAF25580003E9A9 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD22CAF25580003E9A9 /* strings.swift */; };
 		3079DFD52CAF9A800003E9A9 /* logical_data_type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD42CAF9A800003E9A9 /* logical_data_type.swift */; };
+		3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD62CAF9C610003E9A9 /* type_aliases.swift */; };
+		3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		3079DFD02CAD95DA0003E9A9 /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
 		3079DFD22CAF25580003E9A9 /* strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
 		3079DFD42CAF9A800003E9A9 /* logical_data_type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logical_data_type.swift; sourceTree = "<group>"; };
+		3079DFD62CAF9C610003E9A9 /* type_aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = type_aliases.swift; sourceTree = "<group>"; };
+		3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additional_information_about_data_types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				3079DFD02CAD95DA0003E9A9 /* new.swift */,
 				3079DFD22CAF25580003E9A9 /* strings.swift */,
 				3079DFD42CAF9A800003E9A9 /* logical_data_type.swift */,
+				3079DFD62CAF9C610003E9A9 /* type_aliases.swift */,
+				3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */,
 			);
 			path = Swift_learning;
 			sourceTree = "<group>";
@@ -132,7 +138,9 @@
 				3079DFD12CAD95DA0003E9A9 /* new.swift in Sources */,
 				3079DFCA2CAD94C30003E9A9 /* main.swift in Sources */,
 				3079DFD32CAF25580003E9A9 /* strings.swift in Sources */,
+				3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */,
 				3079DFD52CAF9A800003E9A9 /* logical_data_type.swift in Sources */,
+				3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
