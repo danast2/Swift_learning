@@ -73,3 +73,5 @@ let beam = new_add_without_external_name(55)
 let person22 = getPerson()
 print(person22.0)
 print(person22.1)
+
+print("Min: \(statistics.min), Max: \(statistics.max), Average: \(statistics.average)")

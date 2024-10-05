@@ -68,3 +68,42 @@ let anotherStatusTuple: (statusCode: Int, statusText: String, statusConnect: Boo
 = (200, "In Work", true)
 // выводим значение элемента
 //anotherStatusTuple.statusCode // 200
+
+//редактирование кортежа:
+var myFirstTuple: (Int, String) = (0, "0")
+let mySecondTuple = (100, "Код")
+// копируем значение одного кортежа в другой
+//myFirstTuple = mySecondTuple
+//myFirstTuple // (.0 100, .1 "Код")
+
+//Индексы и имена могут использоваться для изменения значений отдельных элементов кортежа (листинг 3.13).
+// объявляем кортеж
+var someTuple = (200, true)
+// изменяем значение отдельного элемента
+//someTuple.0 = 404
+//someTuple.1 = false
+//someTuple // (.0 404, .1 false)
+
+//Использование в коллекциях: Кортежи могут быть элементами массивов, словарей или других коллекций. Например
+
+let people = [("John", 28), ("Alice", 30), ("Bob", 24)]
+
+
+//реальный пример использования кортежа:
+//в функцию передается массив
+func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, average: Double) {
+    //Чтобы избежать ошибки, если массив пустой, используется оператор ??, который возвращает значение по умолчанию — 0, если минимального значения нет.
+    let min = scores.min() ?? 0
+    let max = scores.max() ?? 0
+    let sum = scores.reduce(0, +)
+    let average = Double(sum) / Double(scores.count)
+
+    return (min, max, average)
+}
+
+let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])
+//print("Min: \(statistics.min), Max: \(statistics.max), Average: \(statistics.average)")
+
+//ограничения кортежей:
+/*Кортежи не являются полноценными структурами данных, как классы или структуры (structs), и их не следует использовать для сложных объектов.
+ Кортежи не поддерживают наследование и не могут быть расширены методами, как структуры или классы.*/
