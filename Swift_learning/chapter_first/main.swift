@@ -68,3 +68,8 @@ str()
 run()
 var sas = new_add(myVar: 77)
 let beam = new_add_without_external_name(55)
+
+
+let person22 = getPerson()
+print(person22.0)
+print(person22.1)
