@@ -14,6 +14,7 @@
 		3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD62CAF9C610003E9A9 /* type_aliases.swift */; };
 		3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */; };
 		308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E5D4C2CB1752200C554C1 /* tuples.swift */; };
+		308E5D4F2CB27AD100C554C1 /* sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E5D4E2CB27AD100C554C1 /* sequences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		3079DFD62CAF9C610003E9A9 /* type_aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = type_aliases.swift; sourceTree = "<group>"; };
 		3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additional_information_about_data_types.swift; sourceTree = "<group>"; };
 		308E5D4C2CB1752200C554C1 /* tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuples.swift; sourceTree = "<group>"; };
+		308E5D4E2CB27AD100C554C1 /* sequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				308E5D4C2CB1752200C554C1 /* tuples.swift */,
+				308E5D4E2CB27AD100C554C1 /* sequences.swift */,
 			);
 			path = chapter_second;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */,
 				3079DFD52CAF9A800003E9A9 /* logical_data_type.swift in Sources */,
 				3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */,
+				308E5D4F2CB27AD100C554C1 /* sequences.swift in Sources */,
 				308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
