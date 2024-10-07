@@ -17,8 +17,9 @@ import Foundation
  указать лишь начальное и конечное значение. Все промежуточные элементы будут
  рассчитаны автоматически в ходе последовательного перебора.*/
 
+// ОПЕРЫТОРЫ ОТКРЫТОГО ДИАПАЗОНА
 
-//БИНАРНАЯ ФОРМА ОПЕРАТОРА
+//бинарная форма ОПЕРАТОРА
 let myRange = 1..<500
 
 // задаем тип данных явно
@@ -44,7 +45,28 @@ let firstElement = 10
 var lastElement = 18
 let myBestRange = firstElement..<lastElement
 
-//ПРЕФИКСНАЯ ФОРМА ОПЕРАТОРА
+//префиксная форма ОПЕРАТОРА
 let myRangeNew = ..<500
 let oneSideRange = ..<5
 //type(of: oneSideRangeNew) // PartialRangeUpTo<Int>.Type
+
+
+//ОПЕРАТОРЫ ЗАКРЫТОГО ДИАПАЗОНА
+
+//бинарная форма ОПЕРАТОРА
+let myRangenew = 1...100
+let fullRange = 1...10
+//type(of: fullRange) // ClosedRange<Int>.Type
+
+//постфиксная форма ОПЕРАТОРА
+let myRange1 = 10...
+
+let infRange = 2...
+//type(of: infRange) // PartialRangeFrom<Int>.Type
+let collection = [1, 6, 76, 12, 51]
+//print( collection[infRange] )
+//Консоль
+//[76, 12, 51]
+
+//префиксная форма ОПЕРАТОРА
+let myRange22 = ...0
