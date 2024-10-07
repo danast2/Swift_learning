@@ -15,6 +15,7 @@
 		3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */; };
 		308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E5D4C2CB1752200C554C1 /* tuples.swift */; };
 		30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */; };
+		30F455752CB4545C00E8DED9 /* range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455742CB4545C00E8DED9 /* range.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additional_information_about_data_types.swift; sourceTree = "<group>"; };
 		308E5D4C2CB1752200C554C1 /* tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuples.swift; sourceTree = "<group>"; };
 		30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequences_and_collections.swift; sourceTree = "<group>"; };
+		30F455742CB4545C00E8DED9 /* range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = range.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */,
 				308E5D4C2CB1752200C554C1 /* tuples.swift */,
+				30F455742CB4545C00E8DED9 /* range.swift */,
 			);
 			path = chapter_second;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3079DFD12CAD95DA0003E9A9 /* new.swift in Sources */,
 				3079DFCA2CAD94C30003E9A9 /* main.swift in Sources */,
 				3079DFD32CAF25580003E9A9 /* strings.swift in Sources */,
+				30F455752CB4545C00E8DED9 /* range.swift in Sources */,
 				3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */,
 				3079DFD52CAF9A800003E9A9 /* logical_data_type.swift in Sources */,
 				3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */,
