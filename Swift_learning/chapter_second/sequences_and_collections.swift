@@ -75,3 +75,19 @@ var iter = MyIterator()
 while let number = iter.next(){
     print(number)
 }*/
+
+/*Generators (Custom Sequence Implementation)
+  можно создать свою собственную последовательность, которая не будет коллекцией, используя Sequence и IteratorProtocol. Например, это может быть последовательность, которая возвращает элементы из источника данных по запросу.*/
+//пример с возвращением случайных чисел
+struct RandNumGen: Sequence, IteratorProtocol{
+    mutating func next() -> Int? {
+        return Int.random(in: 1...100)
+    }
+}
+
+var randNum = RandNumGen()
+
+/*for _ in 0..<5 {
+    print(randNum.next()!)
+}
+*/
