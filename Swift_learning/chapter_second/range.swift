@@ -17,4 +17,34 @@ import Foundation
  указать лишь начальное и конечное значение. Все промежуточные элементы будут
  рассчитаны автоматически в ходе последовательного перебора.*/
 
+
+//БИНАРНАЯ ФОРМА ОПЕРАТОРА
 let myRange = 1..<500
+
+// задаем тип данных явно
+let someRangeInt: Range<Int> = 1..<10
+//type(of:someRangeInt) // Range<Int>.Type
+// тип данных определен автоматически
+// на основании переданного значения (неявно)
+let anotherRangeInt = 51..<59
+//type(of:anotherRangeInt) // Range<Int>.Type
+let rangeInt: Range<Int> = 1..<10
+
+// диапазон с элементами типа String
+let rangeString = "a"..<"z"
+//type(of:rangeString) // Range<String>.Type
+// диапазон с элементами типа Character
+let rangeChar: Range<Character> = "a"..<"z"
+//type(of:rangeChar) // Range<Character>.Type
+// диапазон с элементами типа Double
+let rangeDouble = 1.0..<5.0
+//type(of:rangeDouble) // Range<Double>.Type
+
+let firstElement = 10
+var lastElement = 18
+let myBestRange = firstElement..<lastElement
+
+//ПРЕФИКСНАЯ ФОРМА ОПЕРАТОРА
+let myRangeNew = ..<500
+let oneSideRange = ..<5
+//type(of: oneSideRangeNew) // PartialRangeUpTo<Int>.Type
