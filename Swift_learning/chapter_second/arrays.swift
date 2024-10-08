@@ -196,3 +196,34 @@ unsortedArray // [1, 2, 3, 5, 8, 22, 29]
 
 let moneyArray = [50, 100, 500, 1000, 5000]
 let randomMoneyElement = moneyArray.randomElement()*/
+
+
+//Срезы массивов (ArraySlice)
+
+// исходный массив
+let arrayOfNumbers = Array(1...10)
+// его тип данных - Array<Int>
+//type(of: arrayOfNumbers) // Array<Int>.Type
+//arrayOfNumbers // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// получим часть массива (подмассив)
+let slice = arrayOfNumbers[4...6]
+//slice // [5, 6, 7]
+// его тип данных отличается от типа исходного массива
+//type(of: slice) // ArraySlice<Int>.Type
+
+//операции с ArraySlice
+
+//type(of: slice) // ArraySlice<Int>.Type
+let arrayFromSlice = Array(slice)
+//type(of: arrayFromSlice) // Array<Int>.Type
+
+//let newArray: Array<UInt> = arrayOfNumbers.dropLast()
+//type(of: newArray) // Array<UInt>.Type
+
+// исходный массив
+//arrayOfNumbers // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// его срез, полученный в одном из предыдущих листингов
+//slice // [5, 6, 7]
+// отдельный элемент
+//arrayOfNumbers[5] // 6
+//slice[5] // 6
