@@ -96,4 +96,39 @@ let a1 = 1
 let a2 = 2
 let a3 = 3
 var someArray = [1, 2, 3]
-someArray == [a1, a2, a3] // true
+//someArray == [a1, a2, a3] // true
+
+//слияние массивов
+
+// создаем три массива
+let charsOne = ["a", "b", "c"]
+let charsTwo = ["d", "e", "f"]
+let charsThree = ["g", "h", "i"]
+// создаем новый слиянием двух
+var alphabet = charsOne + charsTwo
+// сливаем новый массив с третьим
+//alphabet += charsThree
+//alphabet // ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+
+//многомерные массивы
+var arrayOfArrays = [[1,2,3], [4,5,6], [7,8,9]]
+
+//arrayOfArrays = [[1,2,3], [4,5,6], [7,8,9]]
+// получаем вложенный массив
+//arrayOfArrays[2] // [7, 8, 9]
+// получаем элемент вложенного массива
+//arrayOfArrays[2][1] // 8
+
+//Базовые свойства и методы массивов
+
+let someArrayNew = [1, 2, 3, 4, 5]
+// количество элементов в массиве
+//someArray.count // 5
+
+let emptyArrayNew: [Int] = []
+//emptyArray.count // 0
+//emptyArray.isEmpty // true
+
+var numArray = [1, 2, 3, 4, 5]
+// количество элементов в массиве
+let sliceOfArray = numArray[numArray.count-3...numArray.count-1] // [3, 4, 5]
