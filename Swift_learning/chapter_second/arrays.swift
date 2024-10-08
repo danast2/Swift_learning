@@ -28,4 +28,28 @@ let lineArray = Array(0...9)
 
 // создание массива с повторяющимися значениями
 let repeatArray = Array(repeating: "Swift", count: 5)
-repeatArray // ["Swift", "Swift", "Swift", "Swift", "Swift"]
+//repeatArray // ["Swift", "Swift", "Swift", "Swift", "Swift"]
+
+//доступ к элементам массива
+// неизменяемый массив
+let alphabetArray1 = ["a", "b", "c"]
+// изменяемый массив
+var mutableArray1 = [2, 4, 8]
+// доступ к элементам массивов
+//alphabetArray1[1] // "b"
+//mutableArray1[2] // 8
+
+// изменяемый массив
+var mutableArray2 = [2, 4, 8]
+// изменение элемента массива
+//mutableArray2[1] = 16
+// вывод нового массива
+//mutableArray2 // [2, 16, 8]
+
+
+// изменяемый массив
+var stringsArray = ["one", "two", "three", "four"]
+// заменим несколько элементов
+//stringsArray[1...2] = ["five"]
+//stringsArray // ["one", "five", "four"]
+//stringsArray[2] // "four"
