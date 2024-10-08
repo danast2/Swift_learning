@@ -119,8 +119,9 @@ var arrayOfArrays = [[1,2,3], [4,5,6], [7,8,9]]
 // получаем элемент вложенного массива
 //arrayOfArrays[2][1] // 8
 
-//Базовые свойства и методы массивов
 
+
+//Базовые свойства и методы массивов
 let someArrayNew = [1, 2, 3, 4, 5]
 // количество элементов в массиве
 //someArray.count // 5
@@ -132,3 +133,66 @@ let emptyArrayNew: [Int] = []
 var numArray = [1, 2, 3, 4, 5]
 // количество элементов в массиве
 let sliceOfArray = numArray[numArray.count-3...numArray.count-1] // [3, 4, 5]
+
+let subArray = numArray.suffix(3) // [3, 4, 5]
+
+/*// возвращает первый элемент массива
+numArray.first // 1
+// возвращает последний элемент массива
+numArray.last // 5
+
+numArray // [1, 2, 3, 4, 5]
+numArray.append(6) // [1, 2, 3, 4, 5, 6]
+
+numArray // [1, 2, 3, 4, 5, 6]
+// вставляем новый элемент в середину массива
+numArray.insert(100, at: 2) // [1, 2, 100, 3, 4, 5, 6]
+
+
+numArray // [1, 2, 100, 3, 4, 5, 6]
+// удаляем третий элемент массива (с индексом 2)
+numArray.remove(at: 2) // 100
+// удаляем первый элемент массива
+numArray.removeFirst() // 1
+// удаляем последний элемент массива
+numArray.removeLast() // 6
+/* итоговый массив содержит
+ всего четыре элемента */
+numArray // [2, 3, 4, 5]
+
+numArray // [2, 3, 4, 5]
+// удаляем последний элемент
+numArray.dropLast() // [2, 3, 4]
+// удаляем три первых элемента
+let anotherNumArray = numArray.dropFirst(3)
+anotherNumArray // [5]
+numArray // [2, 3, 4, 5]
+
+numArray // [2, 3, 4, 5]
+ // проверка существования элемента
+let resultTrue = numArray.contains(4) // true
+let resultFalse = numArray.contains(10) // false
+
+let randomArray = [3, 2, 4, 5, 6, 4, 7, 5, 6]
+// поиск минимального элемента
+randomArray.min() // 2
+// поиск максимального элемента
+randomArray.max() // 7
+
+var myAlphaArray = ["a", "bb", "ccc"]
+myAlphaArray.reverse()
+myAlphaArray // ["ccc", "bb", "a"]
+
+// исходная неотсортированная коллекция
+let unsortedArray = [3, 2, 5, 22, 8, 1, 29]
+// метод sorted() возвращает отсортированную последовательность
+// при этом исходный массив не изменяется
+let sortedArray = unsortedArray.sorted()
+unsortedArray // [3, 2, 5, 22, 8, 1, 29]
+sortedArray // [1, 2, 3, 5, 8, 22, 29]
+// метод sort() изменяет исходный массив
+unsortedArray.sort()
+unsortedArray // [1, 2, 3, 5, 8, 22, 29]
+
+let moneyArray = [50, 100, 500, 1000, 5000]
+let randomMoneyElement = moneyArray.randomElement()*/
