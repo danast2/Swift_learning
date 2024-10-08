@@ -53,3 +53,47 @@ var stringsArray = ["one", "two", "three", "four"]
 //stringsArray[1...2] = ["five"]
 //stringsArray // ["one", "five", "four"]
 //stringsArray[2] // "four"
+
+//Тип данных массива
+
+// Массив с типом данных [String] или Array<String>
+let firstAr = Array(arrayLiteral: "a", "b", "c") // ["a", "b", "c"]
+//type(of: firstAr) // Array<String>.Type
+// Массив с типом данных [Int] или Array<Int>
+let secondAr = Array(1..<5) // [1, 2, 3, 4]
+//type(of: secondAr) // Array<Int>.Type
+
+let arrayOne: Array<Character> = ["a", "b", "c"]
+let arrayTwo: [Int] = [1, 2, 5, 8, 11]
+
+//Массив - это value type
+// исходный массив
+let parentArray = ["one", "two", "three"]
+// создаем копию массива
+var copyParentArray = parentArray
+//copyParentArray // ["one", "two", "three"]
+// изменяем значение в копии массива
+//copyParentArray[1] = "four"
+// выводим значение массивов
+//parentArray // ["one", "two", "three"]
+//copyParentArray // // ["one", "four", "three"]
+
+
+//Пустой массив
+
+/* объявляем массив с пустым значением
+ с помощью переданного значения */
+let emptyArray: [String] = [] // []
+ /* объявляем массив с пустым значением
+ с помощью специальной функции */
+let anotherEmptyArray = [String]() // []
+
+//операции с массивами
+
+/* три константы, которые
+ cтанут элементами массива */
+let a1 = 1
+let a2 = 2
+let a3 = 3
+var someArray = [1, 2, 3]
+someArray == [a1, a2, a3] // true
