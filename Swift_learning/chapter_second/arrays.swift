@@ -227,3 +227,20 @@ let arrayFromSlice = Array(slice)
 // отдельный элемент
 //arrayOfNumbers[5] // 6
 //slice[5] // 6
+
+/*Массивы в Swift — это структуры, а значит, они передаются по значению (при копировании создается новый экземпляр массива). Однако если вы хотите передавать массивы по ссылке, можно использовать класс NSMutableArray из фреймворка Foundation.
+*/
+
+let mutableArr: NSMutableArray = ["apple", "orange", "grape"]
+
+func editArr(_ array: NSMutableArray){
+    array.adding("cherry")
+    array.removeObject(at: 0)
+}
+
+// До вызова функции
+//print("Массив до изменений: \(mutableArray)")
+
+//editArr(mutableArr)
+
+//print("Массив после изменений: \(mutableArray)")
