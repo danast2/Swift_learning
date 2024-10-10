@@ -114,3 +114,32 @@ let firstChar = name[index]
 
 let indexLastChar = name.endIndex
 //name[indexLastChar] // Fatal error: String index is out of bounds
+
+
+/*Метод index(before:) позволяет получить индекс символа, предшествующего
+тому, индекс которого передан в качестве аргумента before. Другими словами, передавая в before индекс символа, на выходе вы получите индекс предшествующего
+ему символа. Вызывая данный метод, в него можно, к примеру, передать значение
+свойства endIndex для получения последнего символа в строке (листинг 9.12).
+Листинг 9.12
+let lastCharIndex = name.index(before: indexLastChar)
+name[lastCharIndex] // "c"
+Метод index(after:) позволяет получить индекс последующего символа (листинг 9.13).
+Листинг 9.13
+let secondCharIndex = name.index(after: name.startIndex)
+name[secondCharIndex] // "l"*/
+
+/*
+Метод index(_:offsetBy:) позволяет получить требуемый символ с учетом отступа. В качестве значения первого аргумента передается индекс графем-кластера,
+от которого будет происходить отсчет, а в качестве значения входного параметра
+offsetBy передается целое число, указывающее на отступ вправо (листинг 9.14).
+Листинг 9.14
+let fourCharIndex = name.index(name.startIndex, offsetBy:3)
+name[fourCharIndex] // "s"*/
+
+//количество элементов строки и значение, возвращаемое свойством unicodeScalars, отличаются, так как в составе строки есть
+//сложный графем-кластер (состоящий из двух символов).
+//name.count // 7
+//name.unicodeScalars.count // 8
+
+
+//подстроки
