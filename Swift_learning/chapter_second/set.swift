@@ -133,3 +133,25 @@ let setOfNums: Set = [1,10,2,5,12,23]
 let sortedArray = setOfNums.sorted()
 sortedArray // [1, 2, 5, 10, 12, 23]
 type(of: sortedArray) // Array<Int>.Type*/
+
+
+//здесь показывается, зачем нужен arrayLiteral в принципе в Swift
+struct MyCustomType: ExpressibleByArrayLiteral {
+    var values: [(String, Int)]
+
+    // Определяем, какие типы будут использоваться при инициализации с литералом массива
+    typealias ArrayLiteralElement = (String, Int)
+    
+    // Инициализатор, который принимает переменное число кортежей
+    init(arrayLiteral elements: (String, Int)...) {
+        self.values = elements // собираем элементы в массив
+    }
+}
+
+// Использование
+let myCollection: MyCustomType = [("Alice", 25), ("Bob", 30)]
+
+// Вывод значений
+/*for (name, age) in myCollection.values {
+    print("\(name) is \(age) years old.")
+}*/

@@ -18,6 +18,7 @@
 		30F455752CB4545C00E8DED9 /* range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455742CB4545C00E8DED9 /* range.swift */; };
 		30F455772CB5ABE900E8DED9 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455762CB5ABE900E8DED9 /* arrays.swift */; };
 		30F455792CB70B3300E8DED9 /* set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455782CB70B3300E8DED9 /* set.swift */; };
+		30F4557B2CB834A200E8DED9 /* dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F4557A2CB834A200E8DED9 /* dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		30F455742CB4545C00E8DED9 /* range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = range.swift; sourceTree = "<group>"; };
 		30F455762CB5ABE900E8DED9 /* arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrays.swift; sourceTree = "<group>"; };
 		30F455782CB70B3300E8DED9 /* set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = set.swift; sourceTree = "<group>"; };
+		30F4557A2CB834A200E8DED9 /* dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				30F455742CB4545C00E8DED9 /* range.swift */,
 				30F455762CB5ABE900E8DED9 /* arrays.swift */,
 				30F455782CB70B3300E8DED9 /* set.swift */,
+				30F4557A2CB834A200E8DED9 /* dictionary.swift */,
 			);
 			path = chapter_second;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				3079DFD52CAF9A800003E9A9 /* logical_data_type.swift in Sources */,
 				30F455792CB70B3300E8DED9 /* set.swift in Sources */,
 				3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */,
+				30F4557B2CB834A200E8DED9 /* dictionary.swift in Sources */,
 				30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */,
 				308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */,
 			);
