@@ -62,3 +62,29 @@ let codeDesc = [200: "success", 300: "warning", 400: "error"]
 
 let dictOne: Dictionary<Int,Bool> = [100: false, 200: true, 400: true]
 let dictTwo: [String:String] = ["Jonh":"Dave", "Eleonor":"Green"]
+
+///Взаимодействие с элементами словаря
+var countryDict = ["RUS": "Россия", "BEL": "Белоруссия", "UKR": "Украина"]
+// получаем значение элемента
+var countryName = countryDict["BEL"]
+//countryName // "Белоруссия"
+// изменяем значение элемента
+//countryDict["RUS"] = "Российская Федерация"
+//countryDict // ["RUS": "Российская Федерация", "BEL": "Белоруссия",
+ //"UKR": "Украина"]
+
+var oldValueOne = countryDict.updateValue("Республика Беларусь", forKey: "BEL")
+// в переменной записано старое измененное значение элемента
+//oldValueOne // "Белоруссия"
+var oldValueTwo = countryDict.updateValue("Эстония", forKey: "EST")
+// в переменной записан nil, так как элемента с таким ключом не существует
+//oldValueTwo // nil
+
+//countryDict["TUR"] = "Турция"
+//countryDict // ["BEL": "Республика Беларусь", "TUR": "Турция", "UKR": "Украина",
+ // "EST": "Эстония", "RUS": "Российская Федерация"]
+
+
+//countryDict["TUR"] = nil
+//countryDict.removeValue(forKey: "BEL")
+//countryDict // ["RUS": "Российская Федерация", "UKR": "Украина", "EST": "Эстония"]
