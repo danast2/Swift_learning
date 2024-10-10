@@ -88,3 +88,40 @@ var oldValueTwo = countryDict.updateValue("Эстония", forKey: "EST")
 //countryDict["TUR"] = nil
 //countryDict.removeValue(forKey: "BEL")
 //countryDict // ["RUS": "Российская Федерация", "UKR": "Украина", "EST": "Эстония"]
+
+
+//пустой словарь
+
+let emptyDictionary: [String:Int] = [:]
+let anotherEmptyDictionary = Dictionary<String,Int>()
+
+//С помощью конструкции [:] также можно уничтожить все элементы словаря, если
+//проинициализировать ее словарю в качестве значения
+var birthYears = [1991: ["John", "Ann", "Vasiliy"], 1993: ["Alex", "Boris"] ]
+//birthYears = [:]
+//birthYears // [:]
+
+
+//Базовые свойства и методы словарей
+
+var someDictionary = ["One": 1, "Two": 2, "Three": 3]
+// количество элементов в словаре
+/*someDictionary.count // 3
+Если свойство count равно нулю, то свойство isEmpty возвращает true (листинг 8.12).
+Листинг 8.12
+var emptyDict: [String:Int] = [:]
+emptyDict.count // 0
+emptyDict.isEmpty // true
+При необходимости вы можете получить все ключи или все значения словаря
+с помощью свойств keys и values (листинг 8.13).
+Листинг 8.13
+// все ключи словаря countryDict
+let keys = countryDict.keys
+type(of: keys) // Dictionary<String, String>.Keys.Type
+keys // Dictionary.Keys(["UKR", "RUS", "EST"])
+176   Глава 8. Словари (Dictionary)
+// все значения словаря countryDict
+let values = countryDict.values
+type(of: values) // Dictionary<String, String>.Values.Type
+values // Dictionary.Values(["Украина", "Эстония", "Российская Федерация"])
+*/
