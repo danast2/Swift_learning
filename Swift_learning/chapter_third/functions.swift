@@ -134,3 +134,50 @@ printRequestString(codes: 101, 200)
 его можно обработать с помощью конструкции for-in.
 У одной функции может быть только один вариативный параметр, и он должен
 находиться в самом конце списка входных параметров*/
+
+//кортеж в качестве возвращаемого значения
+
+/*Функция может возвращать значения любого типа данных. Отдельно отмечу,
+ что и кортежи могут быть использованы для этого, так как с их помощью можно
+ с легкостью вернуть сразу несколько значений (возможно, именно этого вам не
+ хватало в других языках программирования, — лично мне не хватало).
+ 250   Глава 12. Функции
+ Представленная в листинге 12.10 функция принимает на вход код ответа сервера
+ и в зависимости от того, к какому диапазону относится переданный код, возвращает кортеж с его описанием*/
+
+func getCodeDescription(code: Int) -> (Int, String) {
+ let description: String
+ switch code {
+ case 1...100:
+     description = "Error"
+ case 101...200:
+     description = "Correct"
+ default:
+     description = "Unknown"
+ }
+ return (code, description)
+}
+//getCodeDescription(code: 150) // (150, "Correct")
+
+/**В качестве типа возвращаемого значения функции getCodeDescription(code:)
+ указан тип кортежа, содержащего два значения: код и его описание.
+ Функцию getCodeDescription(code:) можно улучшить, если указать не просто тип
+ возвращаемого кортежа, а названия его элементов (прямо в типе возвращаемого
+ функцией значения) (листинг 12.11).*/
+
+
+func getCodeDescription_new(code: Int) -> (code: Int, description: String) {
+ let description: String
+ switch code {
+ case 1...100:
+     description = "Error"
+ case 101...200:
+     description = "Correct"
+ default:
+     description = "Unknown"
+ }
+ return (code, description)
+}
+let request_new = getCodeDescription_new(code: 45)
+//request.description // "Error"
+//request.code // 45
