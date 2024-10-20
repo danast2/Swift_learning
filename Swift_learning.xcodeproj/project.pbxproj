@@ -15,6 +15,7 @@
 		3079DFD92CAF9D8B0003E9A9 /* additional_information_about_data_types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */; };
 		308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E5D4C2CB1752200C554C1 /* tuples.swift */; };
 		30A214F42CC0F3EF0048338C /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A214F32CC0F3EF0048338C /* functions.swift */; };
+		30A214F62CC517870048338C /* closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A214F52CC517870048338C /* closure.swift */; };
 		30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */; };
 		30F455752CB4545C00E8DED9 /* range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455742CB4545C00E8DED9 /* range.swift */; };
 		30F455772CB5ABE900E8DED9 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455762CB5ABE900E8DED9 /* arrays.swift */; };
@@ -47,6 +48,7 @@
 		3079DFD82CAF9D8B0003E9A9 /* additional_information_about_data_types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additional_information_about_data_types.swift; sourceTree = "<group>"; };
 		308E5D4C2CB1752200C554C1 /* tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuples.swift; sourceTree = "<group>"; };
 		30A214F32CC0F3EF0048338C /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		30A214F52CC517870048338C /* closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closure.swift; sourceTree = "<group>"; };
 		30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequences_and_collections.swift; sourceTree = "<group>"; };
 		30F455742CB4545C00E8DED9 /* range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = range.swift; sourceTree = "<group>"; };
 		30F455762CB5ABE900E8DED9 /* arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrays.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				30F4559C2CB965B200E8DED9 /* the_main_control_operators.swift */,
 				30F4559E2CB9B83300E8DED9 /* optional_data_types.swift */,
 				30A214F32CC0F3EF0048338C /* functions.swift */,
+				30A214F52CC517870048338C /* closure.swift */,
 			);
 			path = chapter_third;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */,
 				30F4559D2CB965B200E8DED9 /* the_main_control_operators.swift in Sources */,
 				30F4557B2CB834A200E8DED9 /* dictionary.swift in Sources */,
+				30A214F62CC517870048338C /* closure.swift in Sources */,
 				30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */,
 				308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */,
 			);
