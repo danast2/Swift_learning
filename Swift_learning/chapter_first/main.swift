@@ -75,3 +75,10 @@ print(person22.0)
 print(person22.1)
 
 print("Min: \(statistics.min), Max: \(statistics.max), Average: \(statistics.average)")
+
+
+//let starDistanceDict_new = ["Wolf 359": 7.78, "Alpha Centauri B": 4.37, "Barnard's Star": 5.96]
+//let closeStars_new = starDistanceDict.sorted { $0.value < $1.value }
+
+print(closeStars_new)
+print(closeStars_new_new)

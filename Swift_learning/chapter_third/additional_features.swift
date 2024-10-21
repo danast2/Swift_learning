@@ -106,3 +106,54 @@ let flatMapped = numbersArray.flatMap { Array(repeating: $0, count: $0) }
 
 //Вся мощь flatMap(_:) проявляется тогда, когда в многомерном массиве требуется
 //найти все попадающие под некоторое условие значения (листинг 14.8).
+
+let someArr = [[1, 2, 3, 4, 5], [11, 44, 1, 6], [16, 403, 321, 10]]
+let filterSomeArr = someArr.flatMap{$0.filter{ $0 % 2 == 0}}
+//filterSomeArr // [2, 4, 44, 6, 16, 10]
+
+
+//14.4. Метод compactMap(_:)
+//Метод compactMap(_:) позволяет произвести те же действия, что и map(_:), разница
+//лишь в реакции на ситуацию, когда преобразование не может быть произведено.
+//В листинге 14.9 показан пример преобразования массива строковых значений
+//в массив значений типа Int.
+
+let stringArray = ["1", "2", "3", "four", "5"]
+let intFromStringArray = stringArray.map() { Int($0) }
+//intFromStringArray // [1, 2, 3, nil, 5]
+
+//Как видно из значения константы intFromStringArray, при неудачной попытке
+//преобразования String в Int в результирующий массив помещается специальное
+//ключевое слово nil.
+//Если воспользоваться методом compactMap(_:), то все неуспешные преобразования
+//будут проигнорированы и исключены из результата (листинг 14.10).
+//Листинг 14.10
+
+let arrayWitoutNil = stringArray.compactMap() { Int($0) }
+//arrayWitoutNil // [1, 2, 3, 5]
+
+
+//метод filter(_:)
+
+//Метод filter(_:) используется, когда требуется отфильтровать элементы коллекции по определенному правилу (рис. 14.2).
+//В листинге 14.11 показана фильтрация всех целочисленных элементов исходного
+//массива, которые делятся на 2 без остатка, то есть всех четных чисел.
+//Листинг 14.11
+
+
+let numArray_new = [1, 4, 10, 15]
+let even = numArray_new.filter{ $0 % 2 == 0 }
+//even // [4, 10]
+
+//Помимо массивов, можно производить фильтрацию других типов коллекций.
+//В листинге 14.12 показана фильтрация элементов словаря starDistanceDict.
+//Листинг 14.12
+
+let starDistanceDict_new = ["Wolf 359": 7.78, "Alpha Centauri B": 4.37, "Barnard's Star": 5.96]
+let closeStars = starDistanceDict.filter { $0.value < 5.0 }
+
+
+//ХОЧУ ОТСОРТИРОВАТЬ СЛОВАРЬ ПО ЗНАЧЕНИЮ
+//let closeStars_new = starDistanceDict.sorted { $0.value < $1.value }
+//let closeStars_new_new = starDistanceDict.sorted (by: > )
+//closeStars // ["Alpha Centauri B": 4.37]
