@@ -154,6 +154,5 @@ let closeStars = starDistanceDict.filter { $0.value < 5.0 }
 
 
 //ХОЧУ ОТСОРТИРОВАТЬ СЛОВАРЬ ПО ЗНАЧЕНИЮ
-//let closeStars_new = starDistanceDict.sorted { $0.value < $1.value }
-//let closeStars_new_new = starDistanceDict.sorted (by: > )
-//closeStars // ["Alpha Centauri B": 4.37]
+let closeStars_new = starDistanceDict_new.sorted { $0.value < $1.value }
+let closeStars_new_new = starDistanceDict_new.sorted (by: > )
