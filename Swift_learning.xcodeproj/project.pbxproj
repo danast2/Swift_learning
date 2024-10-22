@@ -19,6 +19,7 @@
 		30A214F82CC63C350048338C /* additional_features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A214F72CC63C350048338C /* additional_features.swift */; };
 		30A214FA2CC770C30048338C /* lazy_calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A214F92CC770C30048338C /* lazy_calculations.swift */; };
 		30A214FD2CC77B650048338C /* the_sum_console_application_two_numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A214FC2CC77B650048338C /* the_sum_console_application_two_numbers.swift */; };
+		30A215012CC783C30048338C /* the_console_game_guess_the_number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A215002CC783C30048338C /* the_console_game_guess_the_number.swift */; };
 		30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */; };
 		30F455752CB4545C00E8DED9 /* range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455742CB4545C00E8DED9 /* range.swift */; };
 		30F455772CB5ABE900E8DED9 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455762CB5ABE900E8DED9 /* arrays.swift */; };
@@ -55,6 +56,7 @@
 		30A214F72CC63C350048338C /* additional_features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additional_features.swift; sourceTree = "<group>"; };
 		30A214F92CC770C30048338C /* lazy_calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazy_calculations.swift; sourceTree = "<group>"; };
 		30A214FC2CC77B650048338C /* the_sum_console_application_two_numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_sum_console_application_two_numbers.swift; sourceTree = "<group>"; };
+		30A215002CC783C30048338C /* the_console_game_guess_the_number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_console_game_guess_the_number.swift; sourceTree = "<group>"; };
 		30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequences_and_collections.swift; sourceTree = "<group>"; };
 		30F455742CB4545C00E8DED9 /* range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = range.swift; sourceTree = "<group>"; };
 		30F455762CB5ABE900E8DED9 /* arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrays.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				30A214FC2CC77B650048338C /* the_sum_console_application_two_numbers.swift */,
+				30A215002CC783C30048338C /* the_console_game_guess_the_number.swift */,
 			);
 			path = chapter_fourth;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				30F4559F2CB9B83300E8DED9 /* optional_data_types.swift in Sources */,
 				3079DFD72CAF9C610003E9A9 /* type_aliases.swift in Sources */,
 				30F4559D2CB965B200E8DED9 /* the_main_control_operators.swift in Sources */,
+				30A215012CC783C30048338C /* the_console_game_guess_the_number.swift in Sources */,
 				30A214F82CC63C350048338C /* additional_features.swift in Sources */,
 				30F4557B2CB834A200E8DED9 /* dictionary.swift in Sources */,
 				30A214F62CC517870048338C /* closure.swift in Sources */,
