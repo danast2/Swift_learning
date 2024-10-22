@@ -6,3 +6,8 @@
 //
 
 import Foundation
+func sum(_ a: String?, _ b: String?) -> Int {
+    return Int(a!)! + Int(b!)!
+}
+let result_new_new = sum(a, b)
+//print("Результат сложения - \(result)")
