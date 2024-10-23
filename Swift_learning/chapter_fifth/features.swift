@@ -331,7 +331,7 @@ struct AudioChannel {
  var volume: Int {
      didSet {
          if volume > AudioChannel.maxVolume {
-         volume = AudioChannel.maxVolume
+             volume = AudioChannel.maxVolume
          }
      }
  }
@@ -345,3 +345,5 @@ var RightChannel = AudioChannel(volume: 3)
 //AudioChannel.maxVolume // 10
 //RightChannel.volume = 8
 //RightChannel.volume // 8
+
+
