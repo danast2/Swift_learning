@@ -109,3 +109,60 @@ var playerHelgaPotaki = PlayerChess(name: "Ольга")
 //два независимых экземпляра одной и той же структуры:
 //var olegMuhin = ChessPlayer(name: "Олег")
 //var olegLapin = olegMuhin
+
+
+//методы в структурах
+
+//Объявление методов
+//Помимо свойств, структуры, как и перечисления, могут содержать методы. Синтаксис объявления методов в структурах аналогичен объявлению методов в перечислениях. Они, как и обычные функции, могут принимать входные параметры.
+//Реализуем метод description(), который выводит справочную информацию об
+//игроке в шахматы на консоль (листинг 20.12).
+
+
+struct ChessPlayer_f {
+     var name: String = "Игрок"
+     var victories: UInt = 0
+ init(name: String) {
+     self.name = name
+ }
+ func description() {
+     print("Игрок \(name) имеет \(victories) побед")
+ }
+}
+
+var andrey = ChessPlayer_f(name: "Андрей")
+//andrey.description()
+
+
+//изменяющие методы
+
+//По умолчанию методы структур, кроме инициализаторов, не могут изменять
+//значения свойств, объявленные в тех же самых структурах. Для того чтобы обойти данное ограничение, перед именем метода необходимо указать модификатор
+//mutating.
+//Создадим метод addVictories(count:), который будет изменять значение свойства
+//victories (листинг 20.13).
+
+struct ChessPlayer_f_n {
+     var name: String = "Игрок"
+     var victories: UInt = 0
+ init(name: String) {
+     self.name = name
+ }
+ func description() {
+     print("Игрок \(name) имеет \(victories) побед")
+ }
+ mutating func addVictories( count: UInt = 1 ) {
+     victories += count
+ }
+}
+
+
+var harold = ChessPlayer_f_n(name: "Гарольд")
+//harold.victories // 0
+//harold.addVictories ()
+//harold.victories // 1
+//harold.addVictories(count: 3)
+//harold.victories // 4
+
+    //Структура может изменять значения свойств только в том случае, если
+//экземпляр структуры хранится в переменной.
