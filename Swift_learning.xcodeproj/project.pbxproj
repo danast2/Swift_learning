@@ -30,6 +30,7 @@
 		30A215122CC98C720048338C /* initializers_and_deinitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A215112CC98C720048338C /* initializers_and_deinitializers.swift */; };
 		30A215142CCAC27C0048338C /* memory_management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A215132CCAC27C0048338C /* memory_management.swift */; };
 		30A215162CCAEAA70048338C /* optional_chains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A215152CCAEAA70048338C /* optional_chains.swift */; };
+		30A215182CCAEFBF0048338C /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A215172CCAEFBF0048338C /* protocol.swift */; };
 		30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */; };
 		30F455752CB4545C00E8DED9 /* range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455742CB4545C00E8DED9 /* range.swift */; };
 		30F455772CB5ABE900E8DED9 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455762CB5ABE900E8DED9 /* arrays.swift */; };
@@ -77,6 +78,7 @@
 		30A215112CC98C720048338C /* initializers_and_deinitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initializers_and_deinitializers.swift; sourceTree = "<group>"; };
 		30A215132CCAC27C0048338C /* memory_management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory_management.swift; sourceTree = "<group>"; };
 		30A215152CCAEAA70048338C /* optional_chains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optional_chains.swift; sourceTree = "<group>"; };
+		30A215172CCAEFBF0048338C /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequences_and_collections.swift; sourceTree = "<group>"; };
 		30F455742CB4545C00E8DED9 /* range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = range.swift; sourceTree = "<group>"; };
 		30F455762CB5ABE900E8DED9 /* arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrays.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				30A215112CC98C720048338C /* initializers_and_deinitializers.swift */,
 				30A215132CCAC27C0048338C /* memory_management.swift */,
 				30A215152CCAEAA70048338C /* optional_chains.swift */,
+				30A215172CCAEFBF0048338C /* protocol.swift */,
 			);
 			path = chapter_fifth;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				30F4557B2CB834A200E8DED9 /* dictionary.swift in Sources */,
 				30A214F62CC517870048338C /* closure.swift in Sources */,
 				30A215062CC8B1000048338C /* structure.swift in Sources */,
+				30A215182CCAEFBF0048338C /* protocol.swift in Sources */,
 				30A215122CC98C720048338C /* initializers_and_deinitializers.swift in Sources */,
 				30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */,
 				308E5D4D2CB1752200C554C1 /* tuples.swift in Sources */,
