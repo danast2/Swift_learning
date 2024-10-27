@@ -34,6 +34,7 @@
 		30A2151A2CCC32A40048338C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A215192CCC32A40048338C /* extensions.swift */; };
 		30A2151C2CCC34650048338C /* protocol_oriented_programming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2151B2CCC34650048338C /* protocol_oriented_programming.swift */; };
 		30A2151E2CCD8C510048338C /* generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2151D2CCD8C510048338C /* generic.swift */; };
+		30A215202CCEDFD90048338C /* error_handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2151F2CCEDFD90048338C /* error_handling.swift */; };
 		30F455732CB3BDDF00E8DED9 /* sequences_and_collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */; };
 		30F455752CB4545C00E8DED9 /* range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455742CB4545C00E8DED9 /* range.swift */; };
 		30F455772CB5ABE900E8DED9 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F455762CB5ABE900E8DED9 /* arrays.swift */; };
@@ -85,6 +86,7 @@
 		30A215192CCC32A40048338C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		30A2151B2CCC34650048338C /* protocol_oriented_programming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol_oriented_programming.swift; sourceTree = "<group>"; };
 		30A2151D2CCD8C510048338C /* generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generic.swift; sourceTree = "<group>"; };
+		30A2151F2CCEDFD90048338C /* error_handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error_handling.swift; sourceTree = "<group>"; };
 		30F455722CB3BDDF00E8DED9 /* sequences_and_collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequences_and_collections.swift; sourceTree = "<group>"; };
 		30F455742CB4545C00E8DED9 /* range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = range.swift; sourceTree = "<group>"; };
 		30F455762CB5ABE900E8DED9 /* arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrays.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				30A215192CCC32A40048338C /* extensions.swift */,
 				30A2151B2CCC34650048338C /* protocol_oriented_programming.swift */,
 				30A2151D2CCD8C510048338C /* generic.swift */,
+				30A2151F2CCEDFD90048338C /* error_handling.swift */,
 			);
 			path = chapter_fifth;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				30A215012CC783C30048338C /* the_console_game_guess_the_number.swift in Sources */,
 				30A2150E2CC97C3F0048338C /* inheritance.swift in Sources */,
 				30A215162CCAEAA70048338C /* optional_chains.swift in Sources */,
+				30A215202CCEDFD90048338C /* error_handling.swift in Sources */,
 				30A214F82CC63C350048338C /* additional_features.swift in Sources */,
 				30A2150A2CC96BD70048338C /* features.swift in Sources */,
 				30F4557B2CB834A200E8DED9 /* dictionary.swift in Sources */,
