@@ -40,13 +40,13 @@ import Foundation
 //эту задачу? Вероятно, написать функцию (листинг 34.1).
 
 
-var first = 3
-var second = 5
-func change(a: inout Int, b: inout Int) {
- let tmp = first
- first = second
- second = tmp
-}
+//var first = 3
+//var second = 5
+//func change(a: inout Int, b: inout Int) {
+// let tmp = first
+// first = second
+// second = tmp
+//}
 //change(a: &first, b: &second)
 //first // 5
 //second // 3
@@ -59,11 +59,11 @@ func change(a: inout Int, b: inout Int) {
 //принимать значения данного типа (листинг 34.2).
 
 
-func change(a: inout String, b: inout String) {
- let tmp = first
- first = second
- second = tmp
-}
+//func change(a: inout String, b: inout String) {
+// let tmp = first
+// first = second
+// second = tmp
+//}
 
 
 //Но и этого оказалось мало. Со временем вам потребовалось бы менять местами
@@ -614,11 +614,11 @@ let myCar = getCar() // Car
 //
 // Generic
 //
-func getCar<T: Vehicle>() -> T{
- return Car(uid: 22) as! T
-}
+//func getCar<T: Vehicle>() -> T{
+// return Car(uid: 22) as! T
+//}
 // Тип возвращаемого значения определяется тут
-let a: Car = getCar()
+//let a: Car = getCar()
 //
 // Opaque type
 //
@@ -658,11 +658,11 @@ func getCar(by number: Int) -> some Vehicle {
 //Как уже говорилось ранее, при использовании дженериков пользователь библиотеки (программист, использующий реализованную в библиотеке функцию) должен самостоятельно указать тип данных возвращаемого дженериком значения
 //(листинг 34.30).
 //Листинг 34.30
-func getCar<T: Vehicle>() -> T{
- return Car(uid: 22) as! T
-}
-let a: Car = getCar()
-let b = getCar() // ОШИБКА, Тип не указан
+//func getCar<T: Vehicle>() -> T{
+// return Car(uid: 22) as! T
+//}
+//let a: Car = getCar()
+//let b = getCar() // ОШИБКА, Тип не указан
 //Таким образом, определение типа отдается на откуп пользователю. При использовании Opaque types компилятор самостоятельно определяет тип возвращаемого
 //значения, а пользователь просто использует функцию, ничего не зная о типе
 //данных, который она возвращает.
