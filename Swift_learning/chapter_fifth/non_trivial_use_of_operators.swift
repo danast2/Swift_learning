@@ -115,3 +115,4 @@ var toBeDoubled = Vector2D(x: 1.0, y: 4.0)
 let afterDoubling = +++toBeDoubled
 // toBeDoubled теперь имеет значения (2.0, 8.0)
 // afterDoubling также имеет значения (2.0, 8.0)
+//review
